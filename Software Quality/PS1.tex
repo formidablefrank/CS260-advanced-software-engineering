@@ -1,0 +1,86 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{graphicx, float, url, hyperref, lscape, afterpage, amsthm, amsmath, mathtools}
+
+
+\title{CS 260 Midterm Exam}
+\author{
+	Rayo, Joshua Frankie B.\\
+	2011-19612\\
+	Scientific Computing Laboratory\\
+	\texttt{jbrayo@up.edu.ph}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Metrics}
+\subsection{Software Process vs. Product Metrics}
+Process metrics are quantified indicators that tells if a certain process applied to software development works normally and produces good outputs as expected. As soon as process metrics are calculated, it can then be used during the development and maintenance process to identify problems as assessed by the metric and further improve the process \cite{metrics}. It allows improvements to the system while there is enough time before the software had been packaged. In contrast to product metrics, it indicates the overall quality of the software produced.
+
+Process metrics can be measured in terms of cycletime (time for software, production and delivery), productivity, rate of requirements change, staffing change pattern, scope and costs of implementing a process. Product metrics can be measure in terms of performance, reliability, availability, usability, customer satisfaction and product defects \cite{metrics}.
+
+\subsection{Coupling, Cohesion and Complexity Metrics}
+Coupling refers to the degree of (in)direct dependencies among modules of the software \cite{coupling}. Coupling can be measured in terms of number of subclasses subordinated to a class, number of methods and attributes called on other class, and number of classes that depend (in or out) on a given class. The higher the coupling, the greater the design complexity and the effort of testing. Cohesion refers to the degree of cooperation of a methods within a class to provide good behavior \cite{coupling}. This can be measure in terms of method/attribute usage in the same class.
+
+Software complexity can be measure in terms of cyclomatic complexity (module control flow) using graph theory, working source lines of codes and comment percentage.
+
+\section{Software Quality Models}
+\subsection{FURPS+}
+The FURPS+ system was developed by Robert Grady at Hewlett-Packard that is meant to classify software requirements. The acronym FURPS represents functionality, usability, reliability, performance and supportability. The "+" is concerned with design requirements, implementation requirements, interface requirements and physical requirements \cite{furps}.
+
+\subsection{Six Sigma}
+Sig Sigma is a measure of quality that strives for near perfection \cite{sigma}. It is a disciplined and data-driven methodology for eliminating defects in any process. It is driving toward six standard deviations between the mean and the nearest specification limit. To achieve this quality, a process must no produce more than 3.4 errors per million trials.
+
+\section{KLOC and Function Points}
+\subsection{Pros}
+\textbf{KLOC} - Automating the counting process can eliminate the manual counting lines of code. It is also an intuitive metric for estimating the size of a software because it can be seen and easily visualized. Among newbie programmers, lines of code are easier to express as the size of software.
+
+\textbf{FP} - Regardless of the technology used, the number of FP for a system will remain constant. Moreover, it can be used if a certain tool or a environment is more productive compared to others. The FP count at the end of requirements phase can be compare to FP actually delivered. If the project has grown, there has been scope creep. FP can be used to ensure appropriate levels of functionality will be delivered, and fix price contracts as a means of specifying exactly what will be delivered. Estimates for duration, effort and costs can be computed using past data. Lastly, it can help with communication with lay people since it talks more of the functionalities instead of implementation details.
+
+\subsection{Cons}
+\textbf{KLOC} - Expert programmers can implement the same functionality with less code due to refactoring and optimization and are still be more competitive than a developer creating more lines of code. The amount needed to build a software varies across different environments. Lastly, there is a vague definition on what a line of code is. Does it include comments, lines with only parentheses and brackets, or lines with whitespace?
+
+\textbf{FP} - It requires manual work with much effort. Due to its properties, it cannot be automated and requires usage of different mathematical formulas. It requires steep learning curve and doing well requires more experience
+
+\begin{thebibliography}{5}
+\bibitem{coupling}
+	Mr. Kailash Patidar, Prof.Ravindra Kumar Gupta, Prof.Gajendra Singh Chandel,
+	Coupling and Cohesion Measures in Object Oriented
+	Programming.
+	Volume 3, Issue 3, March 2013,
+	International Journal of Advanced Research in
+	Computer Science and Software Engineering
+	
+\bibitem{metrics}
+	SWEN 350 - Software Process and Product Quality,
+	Rochester Institute of Technology
+	
+\bibitem{furps}
+	Peter Eeles, Senior IT Architect, IBM.
+	Capturing Architectural Requirements,
+	IBM developerWorks.
+	November 15, 2005.
+	\url{http://www.ibm.com/developerworks/rational/library/4706.html}
+	
+\bibitem{sigma}
+	What is Six Sigma?
+	October 06, 2015.
+	\url{http://www.isixsigma.com/new-to-six-sigma/getting-started/what-six-sigma/}
+	
+\bibitem{sloc}
+	Source lines of code,
+	ProjectCodeMeter.
+	\url{http://www.projectcodemeter.com/cost_estimation/help/GL_sloc.htm}
+	
+\bibitem{fp}
+	Kurmanadham V.V.G.B. Gollapudi,
+	Global Microsoft Business Unit,
+	Wipro Technologies.
+	Function Points or Lines of Code? An Insight
+	
+	\url{http://2911segrdghndfkgjhldfigjldfnvlkdfhgoledkjfngvbldfghjlo2012.googlecode.com/svn/trunk/SMA/Team\%20Assignment\%236/Ref/Function\%20Points\%20Or\%20Lines\%20Of\%20Code.doc}
+\end{thebibliography}
+
+\end{document}

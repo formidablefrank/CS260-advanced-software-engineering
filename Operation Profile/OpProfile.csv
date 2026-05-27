@@ -1,0 +1,19 @@
+Operation, Occurrence Rate (operations/day), Occurrence Relative Probability
+Login/logout, 5, 1.00
+Add user account, 5, 1.00
+Delete user account, 2, 0.40
+Set default parameter for Thermostats, 1, 0.20
+Set default setting for all of the contact sensors (ON/OFF), 1, 0.20
+Select room for setting power switch defaults, 3, 0.60
+Change DH operation state, 1, 0.20
+Create month plan, 0.03, 0.006
+Revise month plan, 0.05, 0.01
+View month plan, 0.1, 0.02
+Set temperature plan parameters, 0.1, 0.02
+Set humidity plan parameters, 0.1, 0.02
+Set security plan parameters, 0.1, 0.02
+Set power switch parameter, 0.1, 0.02
+Prepare month report, 0.03, 0.006
+View sensor values, 5, 1.00
+Read sensor values, 5, 1.00
+Control DH environment, 1, 0.20
